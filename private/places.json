@@ -1,50 +1,555 @@
 [
- {"id":"nazys","cat":"stay","name":"Nazy's Guest House","village":"Jokolo","lat":42.1725,"lon":45.3075,"img":"jokolo","imgAlt":"Village of Jokolo in the Pankisi Valley",
-  "text":"Widely described as the most established guesthouse in the valley. Home-cooked Georgian and Kist meals, and the hosts can arrange walking tours, horse riding, bike hire and camping gear. Food tours and cooking experiences are also arranged through the house.","tags":["Guesthouse","Home cooking","Tours arranged"]},
- {"id":"melissa","cat":"stay","name":"Melissa's Guest House","village":"Duisi","lat":42.1465,"lon":45.2925,"img":"duisi","imgAlt":"The village of Duisi",
-  "text":"A guesthouse in Duisi, the valley's main village. It is also known as the place that hosts the Wednesday Hadjist Zikr, a Sufi devotional ceremony. Ask before visiting; it is a religious gathering, not a show.","tags":["Guesthouse","Duisi","Sufi zikr (Wed)"]},
- {"id":"cafe-pankisi","cat":"eat","name":"Cafe Pankisi","village":"Duisi","lat":42.1458,"lon":45.2938,"img":null,
-  "text":"One of the few standalone cafes in the valley, serving Kisturi beer, the local non-alcoholic brew. Most other meals in Pankisi are eaten at guesthouses, served on request, so book ahead.","tags":["Cafe","Kisturi beer"]},
- {"id":"kisturi-brewery","cat":"eat","name":"Kisturi Beer Brewery","village":"Omalo","lat":42.1345,"lon":45.2895,"img":null,
-  "text":"A small brewery run by Shengeli Toxosashvili, offering tastings and tours of Kisturi Ludi, a tangy, kombucha-like drink made from highland fruits and wild herbs such as rosehip and black hawthorn.","tags":["Brewery","Tasting","Local drink"]},
- {"id":"guesthouse-meals","cat":"eat","name":"Dinner at a Kist home","village":"Valley-wide","lat":42.1595,"lon":45.3005,"img":"khachapuri","imgAlt":"Georgian khachapuri (illustrative photo)",
-  "text":"The authentic way to eat in Pankisi: a family table with pumpkin-filled flatbreads, noodles with mutton, fresh cheese, hand-churned butter and stone-ground maize bread. Arrange it through your guesthouse.","tags":["Home dining","Book ahead"]},
- {"id":"old-mosque","cat":"sight","name":"Old Mosque (1902)","village":"Duisi","lat":42.1472,"lon":45.2915,"img":"oldmosque","imgAlt":"The old mosque in Duisi",
-  "text":"The valley's first mosque, built in 1902 and still in use. Women's zikr takes place here on Friday mornings. Dress modestly and ask before entering.","tags":["Mosque","Heritage"]},
- {"id":"new-mosque","cat":"sight","name":"New Mosque (2002)","village":"Duisi","lat":42.1452,"lon":45.2932,"img":"newmosque","imgAlt":"The new mosque in Duisi",
-  "text":"Completed in 2002 on the main road, in red brick with a traditional minaret.","tags":["Mosque"]},
- {"id":"st-george","cat":"sight","name":"St George's Church","village":"Jokolo","lat":42.1728,"lon":45.3092,"img":"church","imgAlt":"St George Church in Jokolo",
-  "text":"Consecrated in 1888 and no longer in regular use, but looked after by local Kists. Ask at your guesthouse for the key.","tags":["Church","1888"]},
- {"id":"jokolo-cemetery","cat":"sight","name":"Old Kist cemetery","village":"Jokolo","lat":42.1715,"lon":45.3065,"img":"cemetery","imgAlt":"Old cemetery at Jokolo",
-  "text":"The oldest burial ground in the valley, with 19th-century gravestones inscribed in Arabic and Georgian, reaching back to the first Chechen settlers.","tags":["History","Gravestones"]},
- {"id":"museum","cat":"sight","name":"Pankisi Ethnographic Museum","village":"Duisi","lat":42.1478,"lon":45.2948,"img":null,
-  "text":"Traditional instruments, carpets, feltwork and antiques. Visits are by appointment, and a local guide is recommended.","tags":["Museum","By appointment"]},
- {"id":"watchtower","cat":"sight","name":"Duisi Watchtower","village":"Duisi","lat":42.1495,"lon":45.2970,"img":null,
-  "text":"A stone tower above the village, reached by a marked path from the main road.","tags":["Tower","Short walk"]},
- {"id":"amphitheatre","cat":"sight","name":"Amphitheatre & WWII memorial","village":"Duisi","lat":42.1510,"lon":45.2985,"img":"amphitheatre","imgAlt":"Amphitheatre above Duisi",
-  "text":"Built in 1985 on the ridge above Duisi. It hosts community events, including the spring Pankisoba festival.","tags":["Festival venue","Views"]},
- {"id":"heritage-houses","cat":"sight","name":"Heritage timber houses","village":"Omalo & Dzibakhevi","lat":42.2086,"lon":45.3088,"img":null,
-  "text":"Traditional Kakhetian homes with carved wooden balconies and lattice work, on the east bank at Omalo and at the north-west end near Dzibakhevi.","tags":["Architecture"]},
- {"id":"batsara","cat":"nature","name":"Batsara Nature Reserve","village":"North-west end","lat":42.2330,"lon":45.2780,"img":"batsara","imgAlt":"Batsara National Reserve",
-  "text":"Home to one of the largest old yew groves in the world. Visits are arranged through the Agency of Protected Areas.","tags":["Reserve","Yew grove","Permit"]},
- {"id":"tbatana","cat":"nature","name":"Tbatana plateau","village":"Edge of Batsara","lat":42.2250,"lon":45.2900,"img":"tbatani","imgAlt":"Pankisi and the Alazani plain seen from Tbatani",
-  "text":"A mountain plateau with views of the Greater Caucasus, reachable by bike, 4WD or horse. Shepherd huts are occupied from June to September.","tags":["Viewpoint","Horse / 4WD"]},
- {"id":"waterfall","cat":"nature","name":"Khadori Waterfall","village":"Beyond Birkiani","lat":42.2300,"lon":45.3300,"img":null,
-  "text":"A cascade down a rock wall with a pool at the base, at the northern end of the valley beyond Birkiani.","tags":["Waterfall","Hike"]},
- {"id":"fortress-trail","cat":"nature","name":"Pankisi Fortress trail","village":"Khalatsani","lat":42.1395,"lon":45.3255,"img":null,
-  "text":"A 4.6 km circular route of about 2.5 hours, starting in Khalatsani.","tags":["4.6 km loop","~2.5 h"]},
- {"id":"panorama","cat":"nature","name":"Duisi Panorama","village":"Duisi","lat":42.1530,"lon":45.3020,"img":"valley2","imgAlt":"Upper part of the Pankisi valley",
-  "text":"An easy hill walk above Duisi, popular at sunset.","tags":["Easy walk","Sunset"]},
- {"id":"alazani","cat":"nature","name":"Alazani River","village":"Valley floor","lat":42.1650,"lon":45.2650,"img":"alazani","imgAlt":"The Alazani river",
-  "text":"Rocky riverside paths for walking and cycling; when the water is high, fishing, kayaking and tyre-rafting.","tags":["River","Fishing","Rafting"]},
- {"id":"zelimkhan","cat":"service","name":"Zelimkhan, mountain bike tours","village":"Pankisi","lat":42.1600,"lon":45.3030,"img":null,
-  "text":"A local operator running guided mountain bike tours in the valley and foothills.","tags":["Cycling","Guide"]},
- {"id":"adventure-treks","cat":"service","name":"Pankisi Adventure Treks","village":"Pankisi","lat":42.1560,"lon":45.3100,"img":null,
-  "text":"Horse trekking from short rides to multi-day trips into the mountains.","tags":["Horse riding","Multi-day"]},
- {"id":"zizi-felt","cat":"service","name":"Zizi's felt-making studio","village":"Duisi","lat":42.1482,"lon":45.2900,"img":null,
-  "text":"A home studio and gift shop where you can watch felt being made by hand.","tags":["Craft","Gift shop"]},
- {"id":"community-center","cat":"service","name":"Duisi Community Center","village":"Duisi","lat":42.1462,"lon":45.2945,"img":null,
-  "text":"Teaches local children feltwork and clay pottery.","tags":["Culture","Crafts"]},
- {"id":"akhmeta","cat":"service","name":"Akhmeta (gateway town)","village":"Akhmeta","lat":42.0342,"lon":45.2109,"img":null,
-  "text":"The municipal centre south of the valley, where shops, banks and onward transport are found. Most visitors pass through here on the way to Pankisi.","tags":["Town","Supplies"]}
+ {
+  "id": "nazys",
+  "cat": "stay",
+  "name": "Nazy's Guest House",
+  "village": "Jokolo",
+  "lat": 42.1725,
+  "lon": 45.3075,
+  "img": "jokolo",
+  "imgAlt": "Nazy's Guest House",
+  "text": "Widely described as the most established guesthouse in the valley. Home-cooked Georgian and Kist meals, and the hosts can arrange walking tours, horse riding, bike hire and camping gear. Food tours and cooking experiences are also arranged through the house.",
+  "tags": [
+   "Guesthouse",
+   "Home cooking",
+   "Tours arranged"
+  ],
+  "capk": "jokolo",
+  "gallery": null,
+  "do": [
+   "Walking tours and horse riding",
+   "Bike hire and camping gear",
+   "Cooking and food experiences",
+   "Home-cooked Georgian and Kist meals"
+  ],
+  "how": "Book ahead through the guesthouse; meals and activities are arranged on request."
+ },
+ {
+  "id": "melissa",
+  "cat": "stay",
+  "name": "Melissa's Guest House",
+  "village": "Duisi",
+  "lat": 42.1465,
+  "lon": 45.2925,
+  "img": "duisi",
+  "imgAlt": "Melissa's Guest House",
+  "text": "A guesthouse in Duisi, the valley's main village. It is also known as the place that hosts the Wednesday Hadjist Zikr, a Sufi devotional ceremony. Ask before visiting; it is a religious gathering, not a show.",
+  "tags": [
+   "Guesthouse",
+   "Duisi",
+   "Sufi zikr (Wed)"
+  ],
+  "capk": "duisi",
+  "gallery": null,
+  "do": [
+   "Stay in the valley's main village",
+   "Attend the Wednesday Hadjist Zikr, by arrangement",
+   "Walk to the old mosque and the watchtower"
+  ],
+  "how": "Arrange your stay in advance and ask your hosts before attending the zikr."
+ },
+ {
+  "id": "cafe-pankisi",
+  "cat": "eat",
+  "name": "Cafe Pankisi",
+  "village": "Duisi",
+  "lat": 42.1458,
+  "lon": 45.2938,
+  "img": "duisi",
+  "text": "One of the few standalone cafes in the valley, serving Kisturi beer, the local non-alcoholic brew. Most other meals in Pankisi are eaten at guesthouses, served on request, so book ahead.",
+  "tags": [
+   "Cafe",
+   "Kisturi beer"
+  ],
+  "capk": "duisi",
+  "gallery": null,
+  "do": [
+   "Try Kisturi beer",
+   "Meet locals in the main village",
+   "Combine with the mosques and the museum"
+  ],
+  "how": "Check opening times locally; most other meals are served at guesthouses.",
+  "imgAlt": "Cafe Pankisi"
+ },
+ {
+  "id": "kisturi-brewery",
+  "cat": "eat",
+  "name": "Kisturi Beer Brewery",
+  "village": "Omalo",
+  "lat": 42.1345,
+  "lon": 45.2895,
+  "img": "valley1",
+  "text": "A small brewery run by Shengeli Toxosashvili, offering tastings and tours of Kisturi Ludi, a tangy, kombucha-like drink made from highland fruits and wild herbs such as rosehip and black hawthorn.",
+  "tags": [
+   "Brewery",
+   "Tasting",
+   "Local drink"
+  ],
+  "capk": "valley",
+  "gallery": null,
+  "do": [
+   "Tastings and brewery tours",
+   "Learn what goes into Kisturi Ludi: highland fruit, rosehip, black hawthorn"
+  ],
+  "how": "Ask your guesthouse to arrange a visit.",
+  "imgAlt": "Kisturi Beer Brewery"
+ },
+ {
+  "id": "guesthouse-meals",
+  "cat": "eat",
+  "name": "Dinner at a Kist home",
+  "village": "Valley-wide",
+  "lat": 42.1595,
+  "lon": 45.3005,
+  "img": "shoti",
+  "imgAlt": "Dinner at a Kist home",
+  "text": "The authentic way to eat in Pankisi: a family table with pumpkin-filled flatbreads, noodles with mutton, fresh cheese, hand-churned butter and stone-ground maize bread. Arrange it through your guesthouse.",
+  "tags": [
+   "Home dining",
+   "Book ahead"
+  ],
+  "capk": "bread",
+  "gallery": null,
+  "do": [
+   "Pumpkin flatbread (chaabilgish)",
+   "Noodles with mutton (zhizhig galnash)",
+   "Fresh cheese, butter, cream and maize bread"
+  ],
+  "how": "Request the meal when you book your guesthouse."
+ },
+ {
+  "id": "old-mosque",
+  "cat": "sight",
+  "name": "Old Mosque (1902)",
+  "village": "Duisi",
+  "lat": 42.1472,
+  "lon": 45.2915,
+  "img": "oldmosque",
+  "imgAlt": "Old Mosque (1902)",
+  "text": "The valley's first mosque, built in 1902 and still in use. Women's zikr takes place here on Friday mornings. Dress modestly and ask before entering.",
+  "tags": [
+   "Mosque",
+   "Heritage"
+  ],
+  "capk": null,
+  "gallery": [
+   "oldmosque",
+   "mosque3"
+  ],
+  "do": [
+   "See the valley's first mosque",
+   "Attend women's zikr on Friday morning, with permission"
+  ],
+  "how": "Dress modestly. Ask a local or your host before entering."
+ },
+ {
+  "id": "new-mosque",
+  "cat": "sight",
+  "name": "New Mosque (2002)",
+  "village": "Duisi",
+  "lat": 42.1452,
+  "lon": 45.2932,
+  "img": "newmosque",
+  "imgAlt": "New Mosque (2002)",
+  "text": "Completed in 2002 on the main road, in red brick with a traditional minaret.",
+  "tags": [
+   "Mosque"
+  ],
+  "capk": null,
+  "gallery": null,
+  "do": [
+   "See the red-brick minaret on the main road"
+  ],
+  "how": "Visible from the main road in Duisi."
+ },
+ {
+  "id": "st-george",
+  "cat": "sight",
+  "name": "St George's Church",
+  "village": "Jokolo",
+  "lat": 42.1728,
+  "lon": 45.3092,
+  "img": "church",
+  "imgAlt": "St George's Church",
+  "text": "Consecrated in 1888 and no longer in regular use, but looked after by local Kists. Ask at your guesthouse for the key.",
+  "tags": [
+   "Church",
+   "1888"
+  ],
+  "capk": null,
+  "gallery": null,
+  "do": [
+   "See the 1888 church",
+   "Walk on to the old cemetery nearby"
+  ],
+  "how": "Ask your guesthouse for the key."
+ },
+ {
+  "id": "jokolo-cemetery",
+  "cat": "sight",
+  "name": "Old Kist cemetery",
+  "village": "Jokolo",
+  "lat": 42.1715,
+  "lon": 45.3065,
+  "img": "cemetery",
+  "imgAlt": "Old Kist cemetery",
+  "text": "The oldest burial ground in the valley, with 19th-century gravestones inscribed in Arabic and Georgian, reaching back to the first Chechen settlers.",
+  "tags": [
+   "History",
+   "Gravestones"
+  ],
+  "capk": null,
+  "gallery": null,
+  "do": [
+   "Read 19th-century inscriptions in Arabic and Georgian",
+   "Learn about the first Chechen settlers"
+  ],
+  "how": "Be respectful; it is a burial ground."
+ },
+ {
+  "id": "museum",
+  "cat": "sight",
+  "name": "Pankisi Ethnographic Museum",
+  "village": "Duisi",
+  "lat": 42.1478,
+  "lon": 45.2948,
+  "img": "folk",
+  "text": "Traditional instruments, carpets, feltwork and antiques. Visits are by appointment, and a local guide is recommended.",
+  "tags": [
+   "Museum",
+   "By appointment"
+  ],
+  "capk": "folk",
+  "gallery": null,
+  "do": [
+   "Instruments, carpets, feltwork and antiques"
+  ],
+  "how": "By appointment only; a local guide is recommended.",
+  "imgAlt": "Pankisi Ethnographic Museum"
+ },
+ {
+  "id": "watchtower",
+  "cat": "sight",
+  "name": "Duisi Watchtower",
+  "village": "Duisi",
+  "lat": 42.1495,
+  "lon": 45.297,
+  "img": "range",
+  "text": "A stone tower above the village, reached by a marked path from the main road.",
+  "tags": [
+   "Tower",
+   "Short walk"
+  ],
+  "capk": "range",
+  "gallery": null,
+  "do": [
+   "Short walk to a stone tower above Duisi",
+   "Views over the village"
+  ],
+  "how": "A marked path starts from the main road.",
+  "imgAlt": "Duisi Watchtower"
+ },
+ {
+  "id": "amphitheatre",
+  "cat": "sight",
+  "name": "Amphitheatre & WWII memorial",
+  "village": "Duisi",
+  "lat": 42.151,
+  "lon": 45.2985,
+  "img": "amphitheatre",
+  "imgAlt": "Amphitheatre & WWII memorial",
+  "text": "Built in 1985 on the ridge above Duisi. It hosts community events, including the spring Pankisoba festival.",
+  "tags": [
+   "Festival venue",
+   "Views"
+  ],
+  "capk": null,
+  "gallery": null,
+  "do": [
+   "Walk up to the ridge for the views",
+   "Come in spring for the Pankisoba festival",
+   "See the WWII memorial"
+  ],
+  "how": "Reached from Duisi; check festival dates locally."
+ },
+ {
+  "id": "heritage-houses",
+  "cat": "sight",
+  "name": "Heritage timber houses",
+  "village": "Omalo & Dzibakhevi",
+  "lat": 42.2086,
+  "lon": 45.3088,
+  "img": "duisi",
+  "text": "Traditional Kakhetian homes with carved wooden balconies and lattice work, on the east bank at Omalo and at the north-west end near Dzibakhevi.",
+  "tags": [
+   "Architecture"
+  ],
+  "capk": "duisi",
+  "gallery": null,
+  "do": [
+   "Look for carved balconies and lattice work",
+   "Combine with a walk in Omalo or Dzibakhevi"
+  ],
+  "how": "Walk or cycle between the villages.",
+  "imgAlt": "Heritage timber houses"
+ },
+ {
+  "id": "batsara",
+  "cat": "nature",
+  "name": "Batsara Nature Reserve",
+  "village": "North-west end",
+  "lat": 42.233,
+  "lon": 45.278,
+  "img": "batsara",
+  "imgAlt": "Batsara Nature Reserve",
+  "text": "Home to one of the largest old yew groves in the world. Visits are arranged through the Agency of Protected Areas.",
+  "tags": [
+   "Reserve",
+   "Yew grove",
+   "Permit"
+  ],
+  "capk": null,
+  "gallery": [
+   "batsara",
+   "batsara2",
+   "batsara3",
+   "batsara5"
+  ],
+  "do": [
+   "Walk among ancient yew trees",
+   "Hike in a protected forest reserve"
+  ],
+  "how": "Arranged through the Agency of Protected Areas; use a local guide."
+ },
+ {
+  "id": "tbatana",
+  "cat": "nature",
+  "name": "Tbatana plateau",
+  "village": "Edge of Batsara",
+  "lat": 42.225,
+  "lon": 45.29,
+  "img": "tbatana1",
+  "imgAlt": "Tbatana plateau",
+  "text": "A mountain plateau with views of the Greater Caucasus, reachable by bike, 4WD or horse. Shepherd huts are occupied from June to September.",
+  "tags": [
+   "Viewpoint",
+   "Horse / 4WD"
+  ],
+  "capk": null,
+  "gallery": [
+   "tbatana1",
+   "tbatani",
+   "tbatana2",
+   "tbatana3",
+   "tbatana5"
+  ],
+  "do": [
+   "Views of the Greater Caucasus",
+   "Visit shepherd huts, June to September",
+   "Ride, cycle or take a 4WD up"
+  ],
+  "how": "Book a horse trek, bike tour or 4WD through your guesthouse."
+ },
+ {
+  "id": "waterfall",
+  "cat": "nature",
+  "name": "Khadori Waterfall",
+  "village": "Beyond Birkiani",
+  "lat": 42.23,
+  "lon": 45.33,
+  "img": "waterfall",
+  "text": "A cascade down a rock wall with a pool at the base, at the northern end of the valley beyond Birkiani.",
+  "tags": [
+   "Waterfall",
+   "Hike"
+  ],
+  "capk": null,
+  "gallery": null,
+  "do": [
+   "Walk to a cascade down a rock wall",
+   "See the pool at its base"
+  ],
+  "how": "At the northern end of the valley beyond Birkiani; ask locally for the trail.",
+  "imgAlt": "Khadori Waterfall"
+ },
+ {
+  "id": "fortress-trail",
+  "cat": "nature",
+  "name": "Pankisi Fortress trail",
+  "village": "Khalatsani",
+  "lat": 42.1395,
+  "lon": 45.3255,
+  "img": "range",
+  "text": "A 4.6 km circular route of about 2.5 hours, starting in Khalatsani.",
+  "tags": [
+   "4.6 km loop",
+   "~2.5 h"
+  ],
+  "capk": "range",
+  "gallery": null,
+  "do": [
+   "4.6 km circular route",
+   "About 2.5 hours",
+   "Starts in Khalatsani"
+  ],
+  "how": "Start in Khalatsani and wear sturdy shoes.",
+  "imgAlt": "Pankisi Fortress trail"
+ },
+ {
+  "id": "panorama",
+  "cat": "nature",
+  "name": "Duisi Panorama",
+  "village": "Duisi",
+  "lat": 42.153,
+  "lon": 45.302,
+  "img": "valley2",
+  "imgAlt": "Duisi Panorama",
+  "text": "An easy hill walk above Duisi, popular at sunset.",
+  "tags": [
+   "Easy walk",
+   "Sunset"
+  ],
+  "capk": "valley",
+  "gallery": null,
+  "do": [
+   "Easy hill walk",
+   "Sunset views over the valley"
+  ],
+  "how": "Start from Duisi; go before sunset and bring a light."
+ },
+ {
+  "id": "alazani",
+  "cat": "nature",
+  "name": "Alazani River",
+  "village": "Valley floor",
+  "lat": 42.165,
+  "lon": 45.265,
+  "img": "alazani",
+  "imgAlt": "Alazani River",
+  "text": "Rocky riverside paths for walking and cycling; when the water is high, fishing, kayaking and tyre-rafting.",
+  "tags": [
+   "River",
+   "Fishing",
+   "Rafting"
+  ],
+  "capk": null,
+  "gallery": [
+   "alazani",
+   "alazani2"
+  ],
+  "do": [
+   "Riverside walking and cycling",
+   "Fishing, kayaking and tyre-rafting when water is high"
+  ],
+  "how": "Water levels vary; ask a local operator before getting in."
+ },
+ {
+  "id": "zelimkhan",
+  "cat": "service",
+  "name": "Zelimkhan, mountain bike tours",
+  "village": "Pankisi",
+  "lat": 42.16,
+  "lon": 45.303,
+  "img": "tbatana2",
+  "text": "A local operator running guided mountain bike tours in the valley and foothills.",
+  "tags": [
+   "Cycling",
+   "Guide"
+  ],
+  "capk": "trail",
+  "gallery": null,
+  "do": [
+   "Guided mountain bike tours",
+   "Valley and foothill routes"
+  ],
+  "how": "Ask your guesthouse to put you in touch.",
+  "imgAlt": "Zelimkhan, mountain bike tours"
+ },
+ {
+  "id": "adventure-treks",
+  "cat": "service",
+  "name": "Pankisi Adventure Treks",
+  "village": "Pankisi",
+  "lat": 42.156,
+  "lon": 45.31,
+  "img": "tbatana3",
+  "text": "Horse trekking from short rides to multi-day trips into the mountains.",
+  "tags": [
+   "Horse riding",
+   "Multi-day"
+  ],
+  "capk": "trail",
+  "gallery": null,
+  "do": [
+   "Short rides to multi-day trips",
+   "Mountain trekking on horseback"
+  ],
+  "how": "Book in advance, especially for multi-day trips.",
+  "imgAlt": "Pankisi Adventure Treks"
+ },
+ {
+  "id": "zizi-felt",
+  "cat": "service",
+  "name": "Zizi's felt-making studio",
+  "village": "Duisi",
+  "lat": 42.1482,
+  "lon": 45.29,
+  "img": null,
+  "text": "A home studio and gift shop where you can watch felt being made by hand.",
+  "tags": [
+   "Craft",
+   "Gift shop"
+  ],
+  "capk": null,
+  "gallery": null,
+  "do": [
+   "Watch felt being made by hand",
+   "Buy handmade gifts"
+  ],
+  "how": "A home studio in Duisi; ask your host to call ahead.",
+  "imgAlt": "Zizi's felt-making studio"
+ },
+ {
+  "id": "community-center",
+  "cat": "service",
+  "name": "Duisi Community Center",
+  "village": "Duisi",
+  "lat": 42.1462,
+  "lon": 45.2945,
+  "img": "folk",
+  "text": "Teaches local children feltwork and clay pottery.",
+  "tags": [
+   "Culture",
+   "Crafts"
+  ],
+  "capk": "folk",
+  "gallery": null,
+  "do": [
+   "See children learning feltwork and clay pottery"
+  ],
+  "how": "Ask in Duisi about visiting.",
+  "imgAlt": "Duisi Community Center"
+ },
+ {
+  "id": "akhmeta",
+  "cat": "service",
+  "name": "Akhmeta (gateway town)",
+  "village": "Akhmeta",
+  "lat": 42.0342,
+  "lon": 45.2109,
+  "img": "alazani2",
+  "text": "The municipal centre south of the valley, where shops, banks and onward transport are found. Most visitors pass through here on the way to Pankisi.",
+  "tags": [
+   "Town",
+   "Supplies"
+  ],
+  "capk": "alazani",
+  "gallery": null,
+  "do": [
+   "Buy supplies and cash",
+   "Catch onward transport"
+  ],
+  "how": "Stock up here before heading into the valley.",
+  "imgAlt": "Akhmeta (gateway town)"
+ }
 ]

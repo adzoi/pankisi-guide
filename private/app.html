@@ -6,7 +6,7 @@
 </head><body>
 <nav><div class="wrap">
   <a class="brand" href="#top">Pankisi Valley</a>
-  <a class="l" href="#about" data-i18n="nav_about">About</a><a class="l" href="#map-sec" data-i18n="nav_map">Map</a><a class="l" href="#cuisine" data-i18n="nav_cuisine">Cuisine</a><a class="l" href="#visit" data-i18n="nav_visit">Visiting</a>
+  <a class="l" href="#about" data-i18n="nav_about">About</a><a class="l" href="#map-sec" data-i18n="nav_map">Map</a><a class="l" href="#nature" data-i18n="nav_nature">Nature</a><a class="l" href="#cuisine" data-i18n="nav_cuisine">Cuisine</a><a class="l" href="#visit" data-i18n="nav_visit">Visiting</a>
   <span id="who" style="font-size:.85rem;color:var(--muted)"></span>
   <select id="lang" class="langsel" aria-label="Language">
     <option value="en">English</option><option value="ka">ქართული</option><option value="ru">Русский</option><option value="de">Deutsch</option>
@@ -16,9 +16,15 @@
 
 <header class="hero" id="top" style="background-image:url(/img/valley2.jpg)">
   <div class="wrap"><h1>Pankisi Valley</h1>
-  <p data-i18n="hero_p">A green gorge in Kakheti, Georgia, at the foot of the Greater Caucasus, home to the Kist people, old mosques, a Georgian church and some of the country's most unusual home cooking.</p></div>
+  <p data-i18n="hero_p">A green gorge in Kakheti, Georgia, at the foot of the Greater Caucasus, home to the Kist people, old mosques, a Georgian church and some of the country's most unusual home cooking.</p>
+  <div class="cta"><a class="btn big" href="#map-sec" data-i18n="hero_cta1">Explore the map</a><a class="btn big ghostw" href="#nature" data-i18n="hero_cta2">See the nature</a></div></div>
   <span class="credit">Photo: Aleksey Muhranoff · CC BY-SA 3.0</span>
 </header>
+
+<section class="tiles"><div class="wrap">
+  <h2 data-i18n="tiles_h">What are you looking for?</h2>
+  <div class="tilegrid" id="tiles"></div>
+</div></section>
 
 <section id="about"><div class="wrap">
   <h2 data-i18n="about_h">About the valley</h2>
@@ -29,6 +35,7 @@
     <div class="fact"><b data-i18n="f3b">Kists</b><span data-i18n="f3s">Georgian Muslims of Vainakh origin</span></div>
     <div class="fact"><b data-i18n="f4b">Home stays</b><span data-i18n="f4s">Most meals and beds are in family guesthouses</span></div>
   </div>
+  <div class="strip"><img loading="lazy" src="/img/duisi.jpg" alt=""><img loading="lazy" src="/img/jokolo.jpg" alt=""><img loading="lazy" src="/img/range.jpg" alt=""></div>
 </div></section>
 
 <section id="map-sec" class="alt"><div class="wrap">
@@ -39,13 +46,19 @@
   <p class="note" data-i18n="map_note">Pins are placed at village or area level and are approximate; this guide does not publish exact addresses or phone numbers. Ask your host for directions and confirm opening details before travelling. Map data © OpenStreetMap contributors.</p>
 </div></section>
 
-<section id="cuisine"><div class="wrap">
+<section id="nature"><div class="wrap">
+  <h2 data-i18n="nature_h">Nature &amp; landscapes</h2>
+  <p class="lead" data-i18n="nature_lead">Pankisi's real draw is the land around the villages: ancient yew forest, high plateaus with views of the Greater Caucasus, a waterfall at the northern end, and the Alazani river along the valley floor. Best from May to October.</p>
+  <div id="naturecards"></div>
+</div></section>
+
+<section id="cuisine" class="alt"><div class="wrap">
   <h2 data-i18n="food_h">Food &amp; drink</h2>
   <p class="lead" data-i18n="food_lead">Kist cooking blends Chechen and Georgian traditions: flatbreads stuffed with pumpkin, handmade noodles with mutton, stone-ground maize bread, fresh cheeses and butter, wild herbs and nettles. Beyond that, the valley shares the wider Kakhetian table.</p>
   <div class="cards" id="food"></div>
 </div></section>
 
-<section id="visit" class="alt"><div class="wrap">
+<section id="visit"><div class="wrap">
   <div class="split">
     <div><h2 data-i18n="visit_h">Visiting well</h2>
     <ul class="tips">
