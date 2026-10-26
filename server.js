@@ -117,6 +117,8 @@ app.get('/api/places', requireAuth, (req, res) =>
   res.sendFile(path.join(__dirname, 'private', 'places.json')));
 app.get('/api/cuisine', requireAuth, (req, res) =>
   res.sendFile(path.join(__dirname, 'private', 'cuisine.json')));
+app.get('/api/i18n', requireAuth, (req, res) =>
+  res.sendFile(path.join(__dirname, 'private', 'i18n.json')));
 app.get('/api/credits', requireAuth, (req, res) =>
   res.sendFile(path.join(__dirname, 'credits.json')));
 

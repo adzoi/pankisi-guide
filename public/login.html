@@ -4,30 +4,38 @@
 <body>
 <main class="auth">
   <div class="pic" style="background-image:url(/img/valley1.jpg)">
-    <div><h1>Pankisi Valley</h1><p>Guesthouses, trails, mosques and Kist cooking in Georgia's Caucasus foothills.</p><small>Photo: Aleksey Muhranoff, CC BY-SA 3.0, Wikimedia Commons</small></div>
+    <div><h1>Pankisi Valley</h1><p id="tag">Guesthouses, trails, mosques and Kist cooking in Georgia's Caucasus foothills.</p><small>Photo: Aleksey Muhranoff, CC BY-SA 3.0, Wikimedia Commons</small></div>
   </div>
   <form id="f" novalidate>
+    <select id="lang" class="langsel" aria-label="Language" style="float:right"><option value="en">English</option><option value="ka">ქართული</option><option value="ru">Русский</option><option value="de">Deutsch</option></select>
     <h2 id="title">Welcome back</h2>
-    <div id="nameRow" hidden><label for="name">Your name</label><input id="name" autocomplete="name" maxlength="60"></div>
-    <label for="email">Email</label><input id="email" type="email" autocomplete="email" required>
-    <label for="pw">Password</label><input id="pw" type="password" autocomplete="current-password" required>
+    <div id="nameRow" hidden><label for="name" id="lName">Your name</label><input id="name" autocomplete="name" maxlength="60"></div>
+    <label for="email" id="lEmail">Email</label><input id="email" type="email" autocomplete="email" required>
+    <label for="pw" id="lPw">Password</label><input id="pw" type="password" autocomplete="current-password" required>
     <div class="err" id="err" role="alert"></div>
     <button class="btn" id="go">Sign in</button>
     <p class="switch"><span id="q">New here?</span> <button type="button" id="toggle">Create an account</button></p>
   </form>
 </main>
 <script>
-let reg=false;const $=id=>document.getElementById(id);
-$('toggle').onclick=()=>{reg=!reg;
- $('title').textContent=reg?'Create your account':'Welcome back';
- $('go').textContent=reg?'Create account':'Sign in';
- $('q').textContent=reg?'Already registered?':'New here?';
- $('toggle').textContent=reg?'Sign in':'Create an account';
- $('nameRow').hidden=!reg;$('pw').autocomplete=reg?'new-password':'current-password';$('err').textContent=''};
+const L10={
+en:{tag:"Guesthouses, trails, mosques and Kist cooking in Georgia's Caucasus foothills.",in:'Welcome back',up:'Create your account',go:'Sign in',goUp:'Create account',q:'New here?',qUp:'Already registered?',t:'Create an account',tUp:'Sign in',name:'Your name',email:'Email',pw:'Password',bad:'Incorrect email or password.',net:'Could not reach the server.'},
+ka:{tag:'სასტუმრო სახლები, ბილიკები, მეჩეთები და ქისტური სამზარეულო საქართველოს კავკასიონის მთისწინეთში.',in:'კეთილი იყოს თქვენი დაბრუნება',up:'შექმენით ანგარიში',go:'შესვლა',goUp:'ანგარიშის შექმნა',q:'პირველად ხართ აქ?',qUp:'უკვე დარეგისტრირებული ხართ?',t:'ანგარიშის შექმნა',tUp:'შესვლა',name:'თქვენი სახელი',email:'ელფოსტა',pw:'პაროლი',bad:'არასწორი ელფოსტა ან პაროლი.',net:'სერვერთან დაკავშირება ვერ მოხერხდა.'},
+ru:{tag:'Гостевые дома, тропы, мечети и кистинская кухня в предгорьях Кавказа в Грузии.',in:'С возвращением',up:'Создайте аккаунт',go:'Войти',goUp:'Создать аккаунт',q:'Впервые здесь?',qUp:'Уже зарегистрированы?',t:'Создать аккаунт',tUp:'Войти',name:'Ваше имя',email:'Эл. почта',pw:'Пароль',bad:'Неверная почта или пароль.',net:'Не удалось связаться с сервером.'},
+de:{tag:'Gästehäuser, Wanderwege, Moscheen und kistische Küche in den Kaukasus-Ausläufern Georgiens.',in:'Willkommen zurück',up:'Konto erstellen',go:'Anmelden',goUp:'Konto erstellen',q:'Neu hier?',qUp:'Schon registriert?',t:'Konto erstellen',tUp:'Anmelden',name:'Ihr Name',email:'E-Mail',pw:'Passwort',bad:'E-Mail oder Passwort falsch.',net:'Server nicht erreichbar.'}};
+let reg=false,lang='en';try{lang=localStorage.getItem('lang')||'en'}catch{}
+const $=id=>document.getElementById(id),t=k=>(L10[lang]||L10.en)[k];
+function paint(){document.documentElement.lang=lang;$('lang').value=lang;$('tag').textContent=t('tag');
+ $('title').textContent=reg?t('up'):t('in');$('go').textContent=reg?t('goUp'):t('go');
+ $('q').textContent=reg?t('qUp'):t('q');$('toggle').textContent=reg?t('tUp'):t('t');
+ $('lName').textContent=t('name');$('lEmail').textContent=t('email');$('lPw').textContent=t('pw');}
+$('lang').onchange=e=>{lang=e.target.value;try{localStorage.setItem('lang',lang)}catch{}paint()};
+$('toggle').onclick=()=>{reg=!reg;$('nameRow').hidden=!reg;$('pw').autocomplete=reg?'new-password':'current-password';$('err').textContent='';paint()};
 $('f').onsubmit=async e=>{e.preventDefault();$('err').textContent='';$('go').disabled=true;
  try{const r=await fetch(reg?'/api/register':'/api/login',{method:'POST',headers:{'Content-Type':'application/json'},
   body:JSON.stringify({name:$('name').value,email:$('email').value,password:$('pw').value})});
-  const d=await r.json();if(r.ok)location.href='/';else $('err').textContent=d.error||'Something went wrong.';}
- catch{$('err').textContent='Could not reach the server.'}
+  const d=await r.json();if(r.ok)location.href='/';else $('err').textContent=(r.status===401?t('bad'):d.error)||'Error';}
+ catch{$('err').textContent=t('net')}
  $('go').disabled=false};
+paint();
 </script></body></html>

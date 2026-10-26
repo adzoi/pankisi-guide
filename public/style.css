@@ -87,3 +87,4 @@ footer a{color:inherit}
 .switch{margin-top:14px;font-size:.9rem;color:var(--muted)}
 .switch button{background:none;border:0;color:var(--clay);text-decoration:underline;padding:0}
 @media(max-width:760px){.auth{grid-template-columns:1fr}.auth .pic{min-height:200px;padding:24px}.auth .pic h1{font-size:1.8rem}}
+.langsel{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 10px;font:inherit;font-size:.85rem}
