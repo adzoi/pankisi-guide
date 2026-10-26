@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sign in · Pankisi Valley Guide</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<main class="auth">
+  <div class="pic" style="background-image:url(/img/valley1.jpg)">
+    <div><h1>Pankisi Valley</h1><p>Guesthouses, trails, mosques and Kist cooking in Georgia's Caucasus foothills.</p><small>Photo: Aleksey Muhranoff, CC BY-SA 3.0, Wikimedia Commons</small></div>
+  </div>
+  <form id="f" novalidate>
+    <h2 id="title">Welcome back</h2>
+    <div id="nameRow" hidden><label for="name">Your name</label><input id="name" autocomplete="name" maxlength="60"></div>
+    <label for="email">Email</label><input id="email" type="email" autocomplete="email" required>
+    <label for="pw">Password</label><input id="pw" type="password" autocomplete="current-password" required>
+    <div class="err" id="err" role="alert"></div>
+    <button class="btn" id="go">Sign in</button>
+    <p class="switch"><span id="q">New here?</span> <button type="button" id="toggle">Create an account</button></p>
+  </form>
+</main>
+<script>
+let reg=false;const $=id=>document.getElementById(id);
+$('toggle').onclick=()=>{reg=!reg;
+ $('title').textContent=reg?'Create your account':'Welcome back';
+ $('go').textContent=reg?'Create account':'Sign in';
+ $('q').textContent=reg?'Already registered?':'New here?';
+ $('toggle').textContent=reg?'Sign in':'Create an account';
+ $('nameRow').hidden=!reg;$('pw').autocomplete=reg?'new-password':'current-password';$('err').textContent=''};
+$('f').onsubmit=async e=>{e.preventDefault();$('err').textContent='';$('go').disabled=true;
+ try{const r=await fetch(reg?'/api/register':'/api/login',{method:'POST',headers:{'Content-Type':'application/json'},
+  body:JSON.stringify({name:$('name').value,email:$('email').value,password:$('pw').value})});
+  const d=await r.json();if(r.ok)location.href='/';else $('err').textContent=d.error||'Something went wrong.';}
+ catch{$('err').textContent='Could not reach the server.'}
+ $('go').disabled=false};
+</script></body></html>

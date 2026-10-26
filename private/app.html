@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pankisi Valley Guide</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="/static/style.css">
+</head><body>
+<nav><div class="wrap">
+  <a class="brand" href="#top">Pankisi Valley</a>
+  <a class="l" href="#about">About</a><a class="l" href="#map-sec">Map</a><a class="l" href="#cuisine">Cuisine</a><a class="l" href="#visit">Visiting</a>
+  <span id="who" style="font-size:.85rem;color:var(--muted)"></span>
+  <button class="btn ghost" id="out">Sign out</button>
+</div></nav>
+
+<header class="hero" id="top" style="background-image:url(/img/valley2.jpg)">
+  <div class="wrap"><h1>Pankisi Valley</h1>
+  <p>A green gorge in Kakheti, Georgia, at the foot of the Greater Caucasus, home to the Kist people, old mosques, a Georgian church and some of the country's most unusual home cooking.</p></div>
+  <span class="credit">Photo: Aleksey Muhranoff · CC BY-SA 3.0</span>
+</header>
+
+<section id="about"><div class="wrap">
+  <h2>About the valley</h2>
+  <p class="lead">Pankisi sits along the upper Alazani river, north of Akhmeta, in a string of villages: Duisi, Jokolo, Birkiani, Dzibakhevi, Omalo, Dumasturi, Khalatsani and Tsinubani. It is home to the Kists, Georgian citizens of Vainakh (Chechen) ancestry who settled here in the 19th century. Today visitors come for hiking, horse riding, community-run guesthouses and a culture where mosque, church and vineyard share the same landscape.</p>
+  <div class="facts">
+    <div class="fact"><b>Kakheti</b><span>Region, Akhmeta Municipality</span></div>
+    <div class="fact"><b>8 villages</b><span>Strung along the Alazani valley</span></div>
+    <div class="fact"><b>Kists</b><span>Georgian Muslims of Vainakh origin</span></div>
+    <div class="fact"><b>Home stays</b><span>Most meals and beds are in family guesthouses</span></div>
+  </div>
+</div></section>
+
+<section id="map-sec" class="alt"><div class="wrap">
+  <h2>Explore the map</h2>
+  <p class="lead">Filter by type, tap a pin or a list entry, and save favourites to your account.</p>
+  <div class="chips" id="chips" role="group" aria-label="Filter places"></div>
+  <div class="mapgrid"><div id="map" aria-label="Map of Pankisi Valley"></div><div class="side" id="list"></div></div>
+  <p class="note">Pins are placed at village or area level and are approximate; this guide does not publish exact addresses or phone numbers. Ask your host for directions and confirm opening details before travelling. Map data © OpenStreetMap contributors.</p>
+</div></section>
+
+<section id="cuisine"><div class="wrap">
+  <h2>Food &amp; drink</h2>
+  <p class="lead">Kist cooking blends Chechen and Georgian traditions: flatbreads stuffed with pumpkin, handmade noodles with mutton, stone-ground maize bread, fresh cheeses and butter, wild herbs and nettles. Beyond that, the valley shares the wider Kakhetian table.</p>
+  <div class="cards" id="food"></div>
+</div></section>
+
+<section id="visit" class="alt"><div class="wrap">
+  <div class="split">
+    <div><h2>Visiting well</h2>
+    <ul class="tips">
+      <li>Book guesthouses and meals ahead; there are few restaurants.</li>
+      <li>Dress modestly, especially near mosques and when attending a zikr.</li>
+      <li>Ask before photographing people or religious gatherings.</li>
+      <li>Hiking and horse trips run best May to October; mountain huts are seasonal.</li>
+      <li>Use local guides for Batsara and the high plateau; permits are via the Agency of Protected Areas.</li>
+      <li>Akhmeta is the closest town for cash and supplies.</li></ul></div>
+    <img src="/img/tbatani.jpg" alt="Pankisi Gorge and the Alazani plain seen from Tbatani"></div>
+</div></section>
+
+<footer><div class="wrap">
+  <p>Place details are compiled from public travel guides and may change. Cooking descriptions are general; dishes vary from family to family.</p>
+  <p><b>Photo credits</b> (all from Wikimedia Commons, used under their licences):</p>
+  <div id="credits"></div>
+</div></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/app.js"></script>
+</body></html>
